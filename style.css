@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu-box {
+    width: 200px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.heading-box-1 {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.heading-box-2 {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.heading-box-3 {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.content-box {
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    section {
+        flex-direction: column;
+    }
+
+    .menu-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-box {
+        width: 48%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Add desktop-specific styles here */
+}
